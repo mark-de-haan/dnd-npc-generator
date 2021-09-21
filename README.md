@@ -1,5 +1,5 @@
 # dnd-npc-generator (UNDER CONSTRUCTION!!!!)
-Hobby project of mine to bring randomized NPC character chards to the internet.
+Hobby project of mine to bring randomized NPC character cards to the internet.
 
 I noticed the lack of NPC generators online and the apps that I found required payments.   
 If you are like me than you are probably always pulling half baked NPCs out of your imaginative hat.
