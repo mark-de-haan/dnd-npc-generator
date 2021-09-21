@@ -24,3 +24,26 @@ If you see your art but would like me to take it down, please contact me via an 
 ## artists and references
 - ericrhea3 on [pinterest](https://nl.pinterest.com/ericrhea3/character/)
 - ...
+
+# Developing
+
+## Project setup
+```shell script
+# Install dependencies
+yarn install
+
+# Compiles and hot-reloads for developmen
+yarn serve
+
+# Compiles and minifies for production
+yarn build
+
+# Run your unit tests
+yarn test:unit
+
+# Lints and fixes files
+yarn lint
+```
+
+See [Configuration Reference](https://cli.vuejs.org/config/) for configuration
+
