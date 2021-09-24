@@ -1,7 +1,7 @@
 <template>
     <div class="character-card">
         <div class="character-image">
-            <img src="../assets/dwarf_female_bard_1.png" alt="Image" width="250"/>
+            <img src="../assets/noble/dwarf_female_1.png" alt="Image" width="250"/>
         </div>
 
         <div class="text-center">
@@ -25,6 +25,7 @@
     .character-image {
         text-align: center;
         vertical-align: middle
+        mix-blend-mode: multiply;
     }
 
     .character-card {

@@ -1,34 +1,57 @@
 <template>
     <div id="app-container">
-        <div class="grid">
 
-            <div class="col-6">
-                <div class="grid">
-                    <div class="col">
-                        <Button label="Get complete NPC" @click="getNpc()"/>
-                        <Button label="Get Storyhook" @click="getStoryhook()"/>
-                    </div>
+<!--        <NavigationBar />-->
+
+        <div id="banner" />
+
+        <main role="main">
+            <div class="grid-nogutter">
+                <div class="col-8 col-offset-4">
+                    <router-view />
                 </div>
             </div>
+        </main>
 
-            <div class="col">
-                <CharacterCard v-if="!!npc.nameObject" :npc="npc" :storyhook="storyhook" />
-            </div>
-        </div>
+        <footer role="doc-footnote">
+
+        </footer>
     </div>
 </template>
+
+<style>
+
+    body {
+        margin: 0
+    }
+
+    main {
+        height: 70vh;
+
+    }
+
+    #banner {
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100vw;
+        mix-blend-mode: multiply;
+        background-image: url("./assets/banner.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #app-container {
+        background-color: #fffef0;
+        background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+    }
+</style>
 
 <script lang="ts">
     import {defineComponent, ref} from 'vue';
     import {useStore} from 'vuex';
-    import CharacterCard from './components/CharacterCard.vue'
-
 
     export default defineComponent({
         name: 'App',
-        components: {
-            CharacterCard
-        },
         setup() {
             const store = useStore();
 
